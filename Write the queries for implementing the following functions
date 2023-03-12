@@ -1,0 +1,24 @@
+a) Max Query:
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+b) Min query:
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+c) Avg query:
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+d) Count query:
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+e) sum query:
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
