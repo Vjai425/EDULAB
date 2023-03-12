@@ -1,0 +1,8 @@
+SELECT customer_id, cust_name, city, grade, salesman_id
+FROM table_name
+WHERE grade = 200;
+
+
+SELECT customer_id, cust_name, city, grade, salesman_id
+FROM customers
+WHERE grade = 200;
