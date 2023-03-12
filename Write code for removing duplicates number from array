@@ -1,0 +1,15 @@
+from array import *
+arr = array('i', [])
+n = int(input("enter number of elements"))
+for i in range(n):
+   arr.append(int(input("enter the array elements")))
+
+print("entered array is:")
+for i in range(len(arr)):
+   print(arr[i])
+newlist = []
+for x in arr:
+   if x not in newlist:
+       newlist.append(x)
+arr = newlist
+print("Array after removing the duplicate elements =", newlist)
