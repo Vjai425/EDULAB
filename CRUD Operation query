@@ -1,0 +1,20 @@
+For creating Database & Table:
+
+CREATE DATABASE db_name
+Similarly, you can create a new table using the `CREATE TABLE` keyword.	
+CREATE TABLE table_name (col_1, col_2, ...)
+
+To insert value:
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+To read Database:
+SELECT * FROM menu;
+
+To update table:
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+To delete:
+DELETE FROM table_name WHERE condition;
