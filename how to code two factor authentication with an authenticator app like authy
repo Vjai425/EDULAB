@@ -1,0 +1,21 @@
+import pyqrcode
+import pyotp
+
+secret_key = pyotp.random_base32()
+
+qr_code = pyqrcode.create(secret_key)
+
+print(qr_code.terminal(quiet_zone=1))
+
+input("Scan the QR code with the Authy app and press Enter to continue...")
+
+def verify_2fa(secret_key, token):
+    totp = pyotp.TOTP(secret_key)
+    return totp.verify(token)
+
+token = input("Enter the token from the Authy app: ")
+
+if verify_2fa(secret_key, token):
+    print("Login Successful!")
+else:
+    print("Invalid Token. Login Failed.")
