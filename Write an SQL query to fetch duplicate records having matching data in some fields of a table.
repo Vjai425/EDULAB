@@ -1,0 +1,4 @@
+SELECT field1, field2, COUNT(*) 
+FROM table_name 
+GROUP BY field1, field2
+HAVING COUNT(*) > 1;
